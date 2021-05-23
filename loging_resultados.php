@@ -12,29 +12,33 @@
         <div class="container-body">
             <div class="body-left"></div>
             <div class="body-right"></div>
-            <header class="encabezado">
-                <div class="container-header-2">
-                    <h1>SCOL</h1>
-                </div>
-                <div class="container-header-1">
-                    <p>Sistema de Consulda Online Lux</p>
-                </div>
+            <div class="left">
+                <header class="encabezado">
+                    <div class="container-header-2">
+                        <h1>SCOL</h1>
+                    </div>
+                    <div class="container-header-1">
+                        <p>Sistema de Consulda Online Lux</p>
+                    </div>
 
-                <!-- <div class="container-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="https://laboratoriocpi.com/">INICIO</a></li>
-                            <li><a href="#">ADQUIRIR SISTEMA</a></li>
-                        </ul>
-                    </nav>
-                </div> -->
-            
-            </header>  
-            <div class="formulario">
-                <form action="./loging_resultados.php" method="post">
-                    <input class="usuario" type="text" name="user" placeholder="Ingrese su usuario">
-                    <button class="boton" type="submit">Ingresar</button>
-                </form>
+                    <!-- <div class="container-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="https://laboratoriocpi.com/">INICIO</a></li>
+                                <li><a href="#">ADQUIRIR SISTEMA</a></li>
+                            </ul>
+                        </nav>
+                    </div> -->
+                
+                </header>  
+            </div>
+            <div class="right">
+                <div class="formulario">
+                    <form action="./loging_resultados.php" method="post">
+                        <input class="usuario" type="text" name="user" placeholder="Ingrese su usuario">
+                        <button class="boton" type="submit">Ingresar</button>
+                    </form>
+                </div>
             </div>
             <footer>
                 <div class="pie">
