@@ -1,12 +1,18 @@
-# Getting Started with Create React App
+# INDOMO DESIGN
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Arquitectura e Interiorismo Estudio
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Interactive responsive web page using:
 
-### `npm start`
+- React.JS
+- Three.JS
+- Lottie.JS
+
+### Install and run
+
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
