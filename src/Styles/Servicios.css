@@ -1,0 +1,166 @@
+:root{
+    --height-a: 40vh;
+    --height-ab: -60vh;
+    --color-tarjeta-fondo: #660708;
+    --color-tarjeta: #ffffff;
+    --color-fondo: #0b090a;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.areas{
+    background-color: var(--color-fondo);
+    width: 100%;
+    cursor: url('puntero3.png'),auto;
+}
+.areas:hover{
+    cursor: url('puntero3.png'),auto;
+}
+
+.arqui, .interiorismo, .design{
+    width: 100%;
+    display: flex;
+    color: rgba(255,255,255,1);
+    height: 100%;
+    padding: 1% 0%;
+}
+
+.contenido-arqui, .contenido-inter, .contenido-design{
+    width: 150%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+}
+
+.animacion-arqui, .animacion-inter, .animacion-design{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0% 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+}
+
+.areas h2{
+    font-size: 2vw;
+    justify-content: left;
+    display: flex;
+    padding: 1% 0%;
+}
+
+.areas li{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style: none;
+    font-size: 1.1vw;
+}
+
+.areas ul{
+    list-style: none;
+}
+
+
+
+.carousel-contenedor{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-tarjeta-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-bottom: 7%;
+}
+.carousel-interno{
+    margin-bottom: -7%;
+    background-color: var(--color-tarjeta);
+    width: 80%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding: 5% 5% 0% 5%;
+}
+.video-contenedor{
+    background-color: var(--color-tarjeta);
+    width: 100%;
+    height: 80%;
+}
+.slider-container{
+    background-color: var(--color-tarjeta);
+    width: 100%;
+    height: 20%;
+}
+
+
+
+
+video{
+    object-fit: cover;
+}
+
+.categoria{
+    width: 100%;
+    height: var(--height-a);
+    margin-top: var(--height-ab);
+    background-color: #ffffff;
+}
+
+.categoria-texto{
+    width: 100%;
+    background-color: rgba(151, 60, 60, 0);
+    color: rgb(241, 241, 241);
+    text-shadow: 1px 1px rgba(18, 18, 18, 0.815);
+    font-size: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 2%;
+}
+.imagen{
+    width: 97%;
+    height: 25vh;
+}
+
+/* 
+.imagen, img, image{
+    width: 80%;
+    height: 20vh;
+}
+
+.carousel2{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.carousel{
+    width: 100%;
+    height: 60%;
+}
+.thumbs{
+    background-color: rgba(128, 0, 128, 0);
+}
+
+.tira{
+    background-color: rgba(128, 255, 0, 0);
+}
+
+} */

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* html{
+    cursor: url('./Galery/punterobase.png'),auto;
+} */
+
+:root{
+    --height-menu-low: 7vh;
+    --height-renders: 100vh;
+    --video-interiorismo: url('./Galery/Renders/areas/interiorismo.mp4');
+    --video-arquitectura: url('./Galery/Renders/areas/arquitectura.mp4');
+    --show-tema-width:0px;
+    --x-width:0vw;
+    --xi-width:0vw;
+}
+
+.App {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.renders{
+    width: 100%;
+    height: var(--height-renders);
+}
+
+.menu-low{
+    width: 100%;
+    height: var(--height-menu-low);
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 996;
+}
+
+.sound, .contact{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 25, 132, 0);
+}
+.sound{
+    background-color: rgba(5, 71, 137, 0);
+}
+.contact{
+    background-color: rgba(137, 43, 226, 0);
+}
+.sound_logo, .contact_logo{
+    position: fixed;
+    bottom: 0.5%;
+    transition: 150ms;
+    transition-delay: 100ms;
+    transition-duration: 500ms; 
+}
+.sound_logo {
+    width: auto;
+    height: 3vh;
+    left: 0.4vw;
+}
+.contact_logo{
+    width: auto;
+    height: 3.7vh;
+    right: 0.4vw;
+}
+.sound_logo:hover, .contact_logo:hover{
+    bottom: 1%;
+    height: 7vh;
+    width: auto;
+}
+
+.contenedor-logo-letras, .contenedor-logo-icono{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(10, 145, 255, 0);
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+}
+
+.contenedor-logo-letras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    font-size: 1.3vw;
+    color: white;
+    background-color: rgba(0, 255, 255, 0);
+}
+.contenedor-logo-icono{
+    background-color: rgba(255, 221, 0, 0);
+}
+.logo-icono{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 37%;
+}
+
+.services{
+    width: 100%;
+    height: 25vh;
+    position: fixed;
+    bottom: 15vh;
+    background-color: rgba(0, 255, 17, 0);
+    z-index: 7;
+    display: flex;
+    transition-delay: 450ms;
+    transition-duration: 500ms;
+}
+.arquitectura, .interiorismo{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 253, 0);
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    object-fit: cover;
+    transition-delay: 450ms;
+    transition-duration: 500ms;
+}
+.arquitectura .video{
+    left: 12.5%;
+}
+.interiorismo .video{
+    right: 12.5%;
+}
+.tema{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 157, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    color: aliceblue;
+    font-size: 2vw;
+}
+.tema:hover ~ .video{
+    width: 50%;
+    height: 100%; 
+}
+.services:hover{
+    width: 100%;
+    height: 50vh;
+}
+.arquitectura .tema{
+    left: 0;
+}
+.interiorismo .tema{
+    right: 0;
+}
+
+.x, .x-i{
+    position: fixed;
+    background-image: url('./Galery/cross.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    left: 92vw;
+    top: 3vh;
+    z-index: 998;
+    transition: 150ms;
+    transition-delay: 100ms;
+    transition-duration: 500ms;
+}
+.x{
+    width: var(--x-width);
+    height: 5vw;
+}
+.x-i{
+    width: var(--xi-width);
+    height: 5vw;
+}
+.x:hover, .x-i:hover{
+    width: 8vw;
+    height: 8vw;
+    left: 90vw;
+    top: 2vh;
+}
+
+
+/*   
+Interiorismo: Diseño, Muebles, Luminarias
+Arquitectura: Planos, Construcción, Urbanismo
+
+Muebles: Foto incorporado y mueble independiente
+
+pie de pagina con redes sociales
+*/
